@@ -1,0 +1,36 @@
+header{
+  background-color: rgb(102, 0, 102);
+  text-decoration-color: rgb (255,255,255)
+}
+
+body{
+  background-color: rgb(255,255,255);
+  font-family: 'exo', cursive;
+}
+.Titulo{
+  font-size: 40px;
+  margin-left: 5.4%;
+
+}
+#logo{
+  margin-top: 1%;
+  margin-left: 3%;
+  margin-bottom: 1%;
+  height: 300px;
+  width: 350px;
+}
+
+.Tabela table {
+width: 100%;
+border-collapse: collapse;
+border-radius: 20px;
+}
+.Tabela th, td {
+padding: 8px;
+text-align: center;
+border: 3px solid  black;
+font-size: larger;
+}
+.Tabela th {
+background-color: rgb(163,125,163);
+}
