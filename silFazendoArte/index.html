@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sil Fazendo Arte</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<img src="img/logo.png" class="logo">
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2 class="titulo">Encomendas</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Produto</th>
+							<th>Quantidade</th>
+							<th>Valor Unitário</th>
+							<th>Total</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-clientes">
+						<tr class="cliente" id="cliente1">
+							<td class="info-nome">Margarete</td>
+							<td class="info-produto">Jogo Americano (4 peças) - Rosa</td>
+							<td class="info-qtde">1</td>
+							<td class="info-valor">Trinta Reais</td>
+							<td class="info-total">0</td>
+						</tr>
+						<tr class="cliente" >
+							<td class="info-nome">Carolina</td>
+							<td class="info-produto">Tapetes Cozinha (3 peças) - Azul</td>
+							<td class="info-qtde">2</td>
+							<td class="info-valor">50</td>
+							<td class="info-total">0</td>
+						</tr>
+						<tr class="cliente" >
+							<td class="info-nome">Daniele</td>
+							<td class="info-produto">Pulseira Cristal Colorida</td>
+							<td class="info-qtde">ABC</td>
+							<td class="info-valor">25</td>
+							<td class="info-total">0</td>
+						</tr>
+						<tr class="cliente" >
+							<td class="info-nome">Daniele</td>
+							<td class="info-produto">Pulseira Cristal Vermelha</td>
+							<td class="info-qtde">1</td>
+							<td class="info-valor">25</td>
+							<td class="info-total">0</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</main>
+
+		<!--Formulário de inclusão de encomendas -->
+		<section class="container">
+			<h2 id="titulo-form">Adicionar nova encomenda</h2>
+
+			<!--exibe error-->
+			<ul id="mensagens-erro"></ul>
+			<form id="form-adiciona">
+				<div class="grupo">
+					<label for="nome">Nome:</label>
+					<input id="nome" name="nome" type="text" placeholder="Digite o nome do(a) cliente" class="campo">
+				</div>
+				<div class="grupo">
+					<label for="qtde">Qtde:</label>
+					<input id="qtde" name="qtde" type="text" placeholder="Digite a quantidade encomendada" class="campo campo-medio">
+				</div>
+				<div class="grupo">
+					<label for="produto">Produto:</label>
+					<select id="produto" name="produto" class="campo campo-medio">
+						<option>Selecione</option>
+						<option>Jogo Americano (4 peças) - Rosa</option>
+						<option>Jogo Americano (4 peças) - Amarelo</option>
+						<option>Jogo Americano (4 peças) - Verde</option>
+						<option>Tapetes Cozinha (3 peças) - Azul</option>
+						<option>Tapetes Cozinha (3 peças) - Rosa</option>
+						<option>Tapetes Cozinha (3 peças) - Amarelo</option>
+						<option>Tapetes Cozinha (3 peças) - Vermelho</option>
+						<option>Pulseira Cristal - Colorida</option>
+						<option>Pulseira Cristal - Vermelha</option>
+						<option>Pulseira Cristal - Rosa</option>
+						<option>Pulseira Cristal - Lilás</option>
+						<option>Pulseira Cristal - Preta</option>
+					</select>
+				</div>
+				<div class="grupo">
+					<label for="unitario">R$ Unitário:</label>
+					<input id="unitario" name="unitario" type="text" placeholder="Digite o valor unitário do produto" class="campo campo-medio">
+				</div>
+
+				<button id="adicionar-encomenda" class="botao bto-principal">Adicionar</button>
+			</form>
+		</section>
+
+		<script src="js/calcula-total.js"></script>
+		<script src="js/form.js"></script>
+
+	</body>
+</html>

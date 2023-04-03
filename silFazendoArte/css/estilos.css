@@ -1,0 +1,96 @@
+body{
+	font-family: "Arial";
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+header{
+	background-color:#c910d6;
+}
+
+.container{
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.logo{
+	width: 180px;
+}
+
+section h2{
+	font-size: 42px;
+	display: block;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+}
+
+td, th {
+	padding: 10px;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+}
+
+.info-invalida {
+    background-color: rgb(255, 242, 0);
+}
+
+label{
+	color: #555;
+	display: block;
+	margin-bottom: .2em;
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 90%;
+	border: 1px solid #ccc;
+	padding: .7em;
+}
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+}
+
+option:hover{
+	color: #c910d6;
+}
+
+.grupo{
+	width: 32%;
+	display: inline-block;
+	padding: 10px 0px;
+}
+
+button{
+	padding: .5em 2em;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#0c8cd3;
+	border-color: #04324c;
+	width: 20%;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
+}
