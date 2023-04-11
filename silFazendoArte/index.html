@@ -16,6 +16,8 @@
 		<main>
 			<section class="container">
 				<h2 class="titulo">Encomendas</h2>
+				<label for="filtrar-tabela">Filtrar:</label>
+				<input type="text" name= "filtro" id="filtrar-tabela" placeholder="Digite um cliente para pesquisar"></input>
 				<table>
 					<thead>
 						<tr>
@@ -73,7 +75,7 @@
 				</div>
 				<div class="grupo">
 					<label for="qtde">Qtde:</label>
-					<input id="qtde" name="qtde" type="text" placeholder="Digite a quantidade encomendada" class="campo campo-medio">
+					<input id="qtde" name="qtde" type="number" placeholder="Digite a quantidade encomendada" class="campo campo-medio">
 				</div>
 				<div class="grupo">
 					<label for="produto">Produto:</label>
@@ -95,7 +97,7 @@
 				</div>
 				<div class="grupo">
 					<label for="unitario">R$ Unitário:</label>
-					<input id="unitario" name="unitario" type="text" placeholder="Digite o valor unitário do produto" class="campo campo-medio">
+					<input id="unitario" name="unitario" type="number" placeholder="Digite o valor unitário do produto" class="campo campo-medio">
 				</div>
 
 				<button id="adicionar-encomenda" class="botao bto-principal">Adicionar</button>
@@ -104,6 +106,7 @@
 
 		<script src="js/calcula-total.js"></script>
 		<script src="js/form.js"></script>
-
+		<script src="js/remover-encomenda.js"></script>
+		<script src="js/filtra.js"></script>
 	</body>
 </html>

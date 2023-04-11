@@ -94,3 +94,17 @@ button{
     clear: both;
     margin: 10px 0px;
 }
+
+.fadeOut{
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#filtrar-tabela{
+	width: 19.5%;
+	height: 35px;
+	margin-bottom: 10px;
+}
+.invisivel{
+	display: none;
+}
